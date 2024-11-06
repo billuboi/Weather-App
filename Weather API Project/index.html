@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="weather_icon.svg" type="image/png">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="outer_header_div">
+        <header>
+            <div class="header_col1">
+                <img class="weather_icon" src="weather_icon.svg">
+                <h1>Weather</h1>
+            </div>
+            <div class="header_col2">
+                <input type="text" name="city" class="city_input" placeholder="Enter city name">
+                <button type="button" class="search_btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        </header>
+    </div>
+
+
+
+    <div class="outer_current">
+        <div class="current">
+            <div class="row1">
+                <div class="weather_img">
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png">
+                </div>
+                <div class="temp_city">
+                    <h1 class="temp">7°c</h1>
+                    <h2 class="city">New York</h2>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="h_f_1">
+                    <div class="h_f_2" style="margin-bottom: 20px;">
+                        <i class="fa fa-tint fa-ts" aria-hidden="true"></i>
+                        <div>
+                            <p class="details humidity">50%</p>
+                            <p style="font-size: 13px;">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="h_f_2">
+                        <i class="fa fa-thermometer-half fa-ts" aria-hidden="true"></i>
+                        <div>
+                            <p class="details feels">22°c</p>
+                            <p style="font-size: 13px;">Feels Like</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_f_1">
+                    <div class="h_f_2" style="margin-bottom: 20px;">
+                        <i class="fa fa-wind fa-ts"></i>
+                        <div>
+                            <p class="details wind">2.5m/s</p>
+                            <p style="font-size: 13px;">Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="h_f_2">
+                        <i class="fa-solid fa-compass fa-ts"></i>
+                        <div>
+                            <p class="details pressure">1000hPa</p>
+                            <p style="font-size: 13px;">Pressure</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="outer_current_m">
+        <button class="close_btn">&times;</button>
+        <div class="current">
+            <div class="row1">
+                <div class="weather_img">
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png">
+                </div>
+                <div class="temp_city">
+                    <h1 class="temp">7°c</h1>
+                    <h2 class="city">New York</h2>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="h_f_1">
+                    <div class="h_f_2" style="margin-bottom: 20px;">
+                        <i class="fa fa-tint fa-ts" aria-hidden="true"></i>
+                        <div>
+                            <p class="details humidity">50%</p>
+                            <p style="font-size: 13px;">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="h_f_2">
+                        <i class="fa fa-thermometer-half fa-ts" aria-hidden="true"></i>
+                        <div>
+                            <p class="details feels">22°c</p>
+                            <p style="font-size: 13px;">Feels Like</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_f_1">
+                    <div class="h_f_2" style="margin-bottom: 20px;">
+                        <i class="fa fa-wind fa-ts"></i>
+                        <div>
+                            <p class="details wind">2.5m/s</p>
+                            <p style="font-size: 13px;">Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="h_f_2">
+                        <i class="fa-solid fa-compass fa-ts"></i>
+                        <div>
+                            <p class="details pressure">1000hPa</p>
+                            <p style="font-size: 13px;">Pressure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop"></div>
+    <h1 style="text-align: center; margin: 10px 0px;">Next 5 Days Forecast</h1>
+    <div class="outer_forecast">
+        <div class="forecast">
+            <div class="day">
+                <div class="day_temp">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                    <p>22°c</p>
+                </div>
+                <p class="day_text">Day</p>
+                <p class="date_text">Date</p>
+            </div>
+            <div class="day">
+                <div class="day_temp">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                    <p>22°c</p>
+                </div>
+                <p class="day_text">Day</p>
+                <p class="date_text">Date</p>
+            </div>
+            <div class="day">
+                <div class="day_temp">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                    <p>22°c</p>
+                </div>
+                <p class="day_text">Day</p>
+                <p class="date_text">Date</p>
+            </div>
+            <div class="day">
+                <div class="day_temp">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                    <p>22°c</p>
+                </div>
+                <p class="day_text">Day</p>
+                <p class="date_text">Date</p>
+            </div>
+            <div class="day">
+                <div class="day_temp">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                    <p>22°c</p>
+                </div>
+                <p class="day_text">Day</p>
+                <p class="date_text">Date</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="condition.js"></script>
+</body>
+
+</html>

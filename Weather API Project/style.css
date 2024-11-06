@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(40, 39, 39);
+    color: white;
+    font-family: sans-serif;
+    padding: 0px 15px;
+    position: relative;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #af3800;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 6px 0px;
+    border-radius: 25px;
+}
+
+h1 {
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.header_col1 {
+    display: flex;
+    padding: 10px;
+}
+
+.weather_icon {
+    width: 50px;
+    height: auto;
+}
+
+
+
+.header_col2{
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.city_input {
+    background-color: #FE621D;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.city_input:focus,
+.city_input:active {
+    background-color: #FE621D;
+    color: white;
+    outline: none;
+}
+
+.search_btn {
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.search_btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.outer_current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.outer_current_m {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 80vw;
+    max-width: 500px;
+    text-align: center;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+
+.outer_current_m .current {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close_btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close_btn:hover {
+    background-color: #ff6666;
+}
+
+
+.current {
+    background: linear-gradient(135deg, #46abee, #6858d0);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 50vh;
+    width: 60vh;
+    text-align: center;
+    
+}
+
+.row1 {
+    display: flex;
+    background-color: #7b96e9;  
+    border-radius: 1rem;
+}
+.weather_img {
+    flex: 1; 
+}
+
+.weather_img img {
+    margin-top: 5%;
+    width: 100%;
+}
+
+
+.temp_city {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.temp_city h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+.temp_city h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 60px;
+    
+    padding: 15px;
+    background-color: #7b96e9;
+    border-radius: 1rem;
+}
+
+.h_f_2 {
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    background-color: #3052b7;
+    border-radius: 1rem;
+}
+
+.fa-ts {
+   font-size: 30px;
+   padding-right: 5px;
+}
+
+.details {
+    font-size: 25px;
+}
+
+.outer_forecast {
+    display: flex;
+    justify-content: center;
+}
+
+.forecast {
+    background: linear-gradient(135deg, #46abee, #6858d0);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 50vh;
+    width: 60vh;
+
+}
+
+.day {
+    display: flex;
+    text-align: center;
+    
+    background-color: #3052b7;
+    border-radius: 1rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #fcfcfc;
+    color: #3052b7;
+}
+
+.day_temp {
+    display: flex;
+    flex: 1;
+    
+}
+
+.day_temp img {
+    width: 50px;
+}
+
+.day p {
+    flex: 1;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 555px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
